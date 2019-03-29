@@ -9,5 +9,13 @@ xsi:noNamespaceSchemaLocation="chatrooms.xsd">
         <chatroomMembers>3</chatroomMembers>
         <chatroomDescription>Jing, Kento and Justin's hangout</chatroomDescription>
     </chatroom>
+    <chatroom id="2">
+        <chatroomName>Jingy's MapleStory Chat</chatroomName>
+        <chatroomAvatar>
+            <image name="Room avatar">image2.jpg</image>
+        </chatroomAvatar>
+        <chatroomMembers>10</chatroomMembers>
+        <chatroomDescription>A place where you can talk about your favorite game, MapleStory!</chatroomDescription>
+    </chatroom>
 </chatrooms>
 

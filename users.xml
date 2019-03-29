@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<users>
+    <user id="1">
+        <name>Jing</name>
+    </user>
+    <user id="2">
+        <name>Kento</name>
+    </user>
+    <user id="3">
+        <name>Justin</name>
+    </user>
+</users>
