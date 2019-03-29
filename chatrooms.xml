@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chatrooms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="chatrooms.xsd">
+    <chatroom id="1">
+        <chatroomName>The Three Musketeers</chatroomName>
+        <chatroomAvatar>
+            <image name="Room avatar">image.jpg</image>
+        </chatroomAvatar>
+        <chatroomMembers>3</chatroomMembers>
+        <chatroomDescription>Jing, Kento and Justin's hangout</chatroomDescription>
+    </chatroom>
+</chatrooms>
+
