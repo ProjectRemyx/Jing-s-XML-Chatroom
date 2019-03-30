@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chatroom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="chatroom.xsd">
+    <chat id="1">
+        <user id="1">
+            <name>Jing</name>
+            <status>Online</status>
+            <avatar>
+                <image name="Avatar picture">avatar.jpg</image>
+            </avatar>
+            <message>
+                <submissionTime>07:00:00</submissionTime>
+                <text>Hey, just started MapleStory M. It's sick!</text>
+            </message>
+        </user>
+        <user id="2">
+            <name>Jenny</name>
+            <status>Busy</status>
+            <message>
+                <submissionTime>07:30:00</submissionTime>
+                <text>Loser!</text>
+            </message>
+        </user>
+        <user id="3">
+            <name>Justin</name>
+            <status>Away</status>
+            <message>
+                <submissionTime>07:31:00</submissionTime>
+                <text>Stop playing MapleStory!!!</text>
+            </message>
+        </user>
+    </chat>
+</chatroom>
