@@ -14,3 +14,8 @@ foreach($xml->chatroom as $item)
 }
 
 ?>
+
+<form action="logout.php" method="post">
+<div><label>Done Chatting?</label></div>
+<button type="submit" name="Logout">Logout</button>
+</form>

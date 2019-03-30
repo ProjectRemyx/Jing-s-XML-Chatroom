@@ -72,6 +72,9 @@ header('Location: chatroom.php');
     <input type="hidden" name="file" value="<?php echo $_SESSION['file']?>"/>
     <button type="submit" name="submitMessage" id="submitButton">Send</button>
 </form>
+<form action="chatrooms.php">
+<button type="submit" name="back">Back to chatroom list</button>
+</form>
 
 </body>
 </html>

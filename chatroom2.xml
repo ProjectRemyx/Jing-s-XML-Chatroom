@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<chatroom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation="chatroom.xsd">
+<chatroom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="chatroom.xsd">
     <chat id="1">
         <user id="1">
             <name>Jing</name>
@@ -29,5 +28,5 @@ xsi:noNamespaceSchemaLocation="chatroom.xsd">
                 <text>Stop playing MapleStory!!!</text>
             </message>
         </user>
-    </chat>
+    <user id="2"><name>Jing</name><message><submissionTime>Mar,30,2019 06:29:58 AM</submissionTime><text>Never</text></message></user><user id="2"><name>Jing</name><message><submissionTime>Mar,30,2019 06:38:35 AM</submissionTime><text>Testing back button</text></message></user><user id="2"><name>Jing</name><message><submissionTime>Mar,30,2019 06:43:53 AM</submissionTime><text>Final test</text></message></user></chat>
 </chatroom>

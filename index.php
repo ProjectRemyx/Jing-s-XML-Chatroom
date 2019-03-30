@@ -44,7 +44,7 @@ if(isset($_POST['submit']))
 
 <!-- Login Form  -->
 <div id="login-wrapper" <?php if ($showLogin===false){?>style="display:none"<?php } ?>>
-<form action="login.php" method="post">
+<form action="index.php" method="post">
     <h1>Welcome to Jing's XML chat application</h1>
     <h2>Please enter a name:</h2>
     <input type="text" name="name">
