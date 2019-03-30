@@ -1,0 +1,16 @@
+#chatroom {
+    width: 600px;
+    margin-bottom: 2px;
+  }
+  
+  #chats {
+    padding: 10px;
+    border: 1px solid black;
+    width: 400px;
+    height: 90vh;
+    overflow: scroll;
+  }
+
+  #message {
+    width: 365px;
+  }
