@@ -2,11 +2,14 @@
 <users>
     <user id="1">
         <name>Jing</name>
+        <password>$2y$10$3av/IDeUqIjfS7hPpgRvreZn.2QKts5Bgx9lFk55Ggslqn6DC7lbu</password>
     </user>
     <user id="2">
         <name>Kento</name>
+        <password>$2y$10$1UHhgp9tuHNYBbZGGQadAuqqQZWRVvQcnZdk6RygyKPEqqFZQZASC</password>
     </user>
     <user id="3">
         <name>Justin</name>
+        <password>$2y$10$CDcVkA78E6Al6nRsZaoso.X0Q3Bg5vnIr.TaADFK3DrnT5QFapdWi</password>
     </user>
 </users>

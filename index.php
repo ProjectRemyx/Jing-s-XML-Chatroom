@@ -8,7 +8,7 @@ $showLogin = true;
 if(isset($_POST['submit']))
 {
     //If the name entered is not blank
-    if($_POST['name'] != "")
+    if($_POST['name'] != "" && $_POST['password'] != "")
     {
         //Take posted name and put it into variable user
         $user = $_POST['name'];
@@ -23,9 +23,17 @@ if(isset($_POST['submit']))
             //If find a match, redirect to list of chat rooms
             if($xml->user[$i]->name == $user)
             {
-                $_SESSION['user'] = $user;
-                $showLogin = false;
-                header('Location: chatrooms.php');
+                if(password_verify($_POST['password'], $xml->user[$i]->password))
+                {
+                    $_SESSION['user'] = $user;
+                    $showLogin = false;
+                    header('Location: chatrooms.php');
+                }
+                else
+                {
+                    $error = "Incorrect password";
+                }
+            
             }
             //Else set an error message
             else
@@ -37,7 +45,7 @@ if(isset($_POST['submit']))
     }
     else
     {
-        $error = "Please enter a name";
+        $error = "You must enter a name and a password";
     }
 }
 ?>
@@ -46,8 +54,10 @@ if(isset($_POST['submit']))
 <div id="login-wrapper" <?php if ($showLogin===false){?>style="display:none"<?php } ?>>
 <form action="index.php" method="post">
     <h1>Welcome to Jing's XML chat application</h1>
-    <h2>Please enter a name:</h2>
+    <h2>Name:</h2>
     <input type="text" name="name">
+    <h2>Password:</h2>
+    <input type="password" name="password">
     <input type="submit" name="submit" value="Submit">
 </form>
 <div id="errMsg"><?php echo $error ?></div>
