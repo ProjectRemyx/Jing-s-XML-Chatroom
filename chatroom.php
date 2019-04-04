@@ -50,7 +50,7 @@ header('Location: chatroom.php');
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link rel="stylesheet" type="text/css" href="css/chatroom.css">
 </head>
 <body>
 <div id="chatroom">

@@ -1,6 +1,6 @@
 <?php
 session_start();
-$xml = simplexml_load_file('chatrooms.xml');
+$xml = simplexml_load_file('Chatrooms/chatroomsList.xml');
 
 foreach($xml->chatroom as $item)
 {  

@@ -13,7 +13,7 @@ if(isset($_POST['submit']))
         //Take posted name and put it into variable user
         $user = $_POST['name'];
         //Load our XML file containing user list
-        $xml = simplexml_load_file('users.xml');
+        $xml = simplexml_load_file('Users/users.xml');
         //Take a count of number of users
         $userList = $xml->user->count();
         
@@ -49,17 +49,28 @@ if(isset($_POST['submit']))
     }
 }
 ?>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+    <main>
+        <!-- Login Form  -->
+        <div id="login-wrapper" <?php if ($showLogin===false){?>style="display:none" <?php } ?>>
+            <form action="index.php" method="post">
+                <h1>Welcome to Jing's XML chat application</h1>
+                <h2>Name:</h2>
+                <input type="text" name="name">
+                <h2>Password:</h2>
+                <input type="password" name="password">
+                <div id="submitContainer">
+                    <input type="submit" name="submit" value="Submit">
+                </div>
+            </form>
+            <div id="errMsg"><?php echo $error ?></div>
+        </div>
+    </main>
+</body>
 
-<!-- Login Form  -->
-<div id="login-wrapper" <?php if ($showLogin===false){?>style="display:none"<?php } ?>>
-<form action="index.php" method="post">
-    <h1>Welcome to Jing's XML chat application</h1>
-    <h2>Name:</h2>
-    <input type="text" name="name">
-    <h2>Password:</h2>
-    <input type="password" name="password">
-    <input type="submit" name="submit" value="Submit">
-</form>
-<div id="errMsg"><?php echo $error ?></div>
-</div>
-
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chatroom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="chatroom.xsd">
+    <chat id="1">
+        <user id="1">
+            <name>Jing</name>
+            <status>Online</status>
+            <avatar>
+                <image name="Avatar picture">avatar.jpg</image>
+            </avatar>
+            <message>
+                <submissionTime>07:00:00</submissionTime>
+                <text>Hey</text>
+            </message>
+        </user>
+        <user id="2">
+            <name>Kento</name>
+            <status>Busy</status>
+            <message>
+                <submissionTime>07:30:00</submissionTime>
+                <text>Busy doing the XML assignment</text>
+            </message>
+        </user>
+        <user id="3">
+            <name>Justin</name>
+            <status>Away</status>
+            <message>
+                <submissionTime>07:31:00</submissionTime>
+                <text>Same</text>
+            </message>
+        </user>
+    <user id="1"><name>Jing</name><message><submissionTime>Mar,30,2019 06:06:02 AM</submissionTime><text>ok</text></message></user><user id="1"><name>Jing</name><message><submissionTime>Mar,30,2019 06:08:02 AM</submissionTime><text>fine</text></message></user><user id="1"><name>Jing</name><message><submissionTime>Mar,30,2019 06:09:07 AM</submissionTime><text>D:</text></message></user><user id="1"><name>Jing</name><message><submissionTime>Mar,30,2019 06:11:47 AM</submissionTime><text>i hate u</text></message></user><user id="1"><name>Jing</name><message><submissionTime>Mar,30,2019 06:25:33 AM</submissionTime><text>PLEASE WORK</text></message></user><user id="1"><name>Jing</name><message><submissionTime>Mar,30,2019 06:25:35 AM</submissionTime><text>PLEASE WORK</text></message></user><user id="1"><name>Jing</name><message><submissionTime>Mar,30,2019 06:26:13 AM</submissionTime><text>Can you refresh</text></message></user><user id="1"><name>Jing</name><message><submissionTime>Mar,30,2019 06:26:17 AM</submissionTime><text>OMG IS IT WORKING</text></message></user><user id="1"><name>Jing</name><message><submissionTime>Mar,30,2019 06:26:21 AM</submissionTime><text>YESSSSSSSSSSSSSSSSSSS</text></message></user><user id="1"><name>Jing</name><message><submissionTime>Mar,30,2019 06:36:58 AM</submissionTime><text>Testing</text></message></user><user id="1"><name>Jing</name><message><submissionTime>Mar,30,2019 06:38:27 AM</submissionTime><text>Testing back button</text></message></user><user id="1"><name>Jing</name><message><submissionTime>Mar,30,2019 06:42:51 AM</submissionTime><text>Final Test</text></message></user><user id="1"><name>Jing</name><message><submissionTime>Apr,05,2019 12:11:34 AM</submissionTime><text>Assignment 3 first test login with encryption/salt</text></message></user><user id="1"><name>Jing</name><message><submissionTime>Apr,05,2019 01:01:47 AM</submissionTime><text>test</text></message></user></chat>
+</chatroom>
