@@ -1,14 +1,12 @@
 <?php
+//Start the session
 session_start();
-//This code has been moved to setSession.php
-// $_SESSION['id']= $_POST['id'];
-// $_SESSION['file'] = "chatroom".$_SESSION['id'].".xml";
 
+//Load our file
 $chatroom = simplexml_load_file($_SESSION['file']);
 $messageCount = $chatroom->chat->user->count();
-// echo $messageCount;
 
-//Submit a chat message
+//Code is run when submit button is pressed
 if(isset($_REQUEST['submitMessage']))
 {
 $xml = new DOMDocument("1.0", "UTF-8");
@@ -43,19 +41,24 @@ $user->appendChild($message);
 
 //Save the file
 $xml->save($_SESSION['file']);
-header('Location: chatroom.php');
+// header('Location: chatroom.php');
 }
 ?>
 
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" type="text/css" href="css/chatroom.css">
+    <link rel="stylesheet" type="text/css" href="css/chatroom.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="scripts/refreshChat.js"></script>
 </head>
+
 <body>
-<div id="chatroom">
-      <div id="chats">
-        <?php
+    <div id="chatroomContainer">
+        <div id="chatroom">
+            <div id="chats">
+                <?php
         foreach($chatroom->chat->user as $user)
         {
             echo $user->name . " ". "(";
@@ -64,17 +67,18 @@ header('Location: chatroom.php');
             echo "</br>";
         }
         ?>
-      </div>
-</div>
-<form action="chatroom.php" method="post">
-    <input type="text" name="messages" id="message">
-    <input type="hidden" name="id" value="<?php echo $_SESSION['id']?>"/>    
-    <input type="hidden" name="file" value="<?php echo $_SESSION['file']?>"/>
-    <button type="submit" name="submitMessage" id="submitButton">Send</button>
-</form>
-<form action="chatrooms.php">
-<button type="submit" name="back">Back to chatroom list</button>
-</form>
-
+            </div>
+        </div>
+        <form action="chatroom.php" method="post">
+            <input type="text" name="messages" id="message">
+            <input type="hidden" name="id" value="<?php echo $_SESSION['id']?>" />
+            <input type="hidden" name="file" value="<?php echo $_SESSION['file']?>" />
+            <button type="submit" name="submitMessage" id="submitButton">Send</button>
+        </form>
+        <form action="chatrooms.php">
+            <button type="submit" name="back">Back to chatroom list</button>
+        </form>
+    </div>
 </body>
+
 </html>
