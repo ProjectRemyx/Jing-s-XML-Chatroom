@@ -1,8 +1,10 @@
 <?php 
+require_once 'googleLoginConfig.php';
 session_start();
 //Error message stored in variable
 $error = "";
 $showLogin = true;
+$loginURL = $gClient->createAuthUrl();
 
 //If the submit button is pressed
 if(isset($_POST['submit']))
@@ -67,6 +69,7 @@ if(isset($_POST['submit']))
                 <div id="submitContainer">
                     <input type="submit" name="submit" value="Submit">
                 </div>
+                <input type="button" class="button" onclick="window.location = '<?php echo $loginURL ?>';" id="googleSignInBtn" value="Sign In with Google">
             </form>
             <div id="errMsg"><?php echo $error ?></div>
         </div>
