@@ -1,20 +1,36 @@
 #chatroom {
-    width: 600px;
+    width: 80%;
     margin-bottom: 2px;
+    display: inline-block;
   }
+
+#userList{
+  width: 20%;
+  padding: 10px;
+  float: right;
+
+}
   
   #chats {
     padding: 10px;
     border: 1px solid black;
-    width: 400px;
+    width: auto;
     height: 90vh;
     overflow: scroll;
   }
 
+  #submitMessageForm{
+    width: 80%;
+  }
+
   #message {
-    width: 400px;
+    width: 88%;
   }
 
   #sendButton{
     margin-top: -3em;
+  }
+
+  #backButtonContainer{
+    margin-bottom: 1em;
   }
