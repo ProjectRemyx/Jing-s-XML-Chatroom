@@ -12,5 +12,9 @@
   }
 
   #message {
-    width: 365px;
+    width: 400px;
+  }
+
+  #sendButton{
+    margin-top: -3em;
   }
