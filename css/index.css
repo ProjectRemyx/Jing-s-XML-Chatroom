@@ -42,3 +42,7 @@ text-align: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
+footer.page-footer{
+    background-color: #ff8f00;
+}
