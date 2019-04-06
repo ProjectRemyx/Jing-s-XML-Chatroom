@@ -1,0 +1,29 @@
+/* Nav bar styling */
+.nav-wrapper {
+    background-color: #ff8f00;
+}
+
+.brand-logo img {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+/* Footer styling */
+
+/* Sticky footer */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer.page-footer {
+    background-color: #ff8f00;
+}

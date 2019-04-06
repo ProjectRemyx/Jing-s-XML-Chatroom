@@ -52,6 +52,7 @@ $xml->save($_SESSION['file']);
     <link rel="stylesheet" type="text/css" href="css/chatroom.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="scripts/refreshChat.js"></script>
+    <!-- <script src="scripts/refreshHeader.js"></script> -->
 </head>
 
 <body>

@@ -1,20 +1,4 @@
-/* Nav bar styling */
-.nav-wrapper{
-background-color: #ff8f00;
-}
-
-.brand-logo img{
-    width: 3.5rem;
-    height: 3.5rem;
-    margin-top: 0.5rem;
-    margin-left: 1rem;
-}
-
 /* Page styling */
-body{
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
 #intro{
 margin-top: 1rem;
 text-align: center;
@@ -43,6 +27,3 @@ text-align: center;
     margin-bottom: 1rem;
 }
 
-footer.page-footer{
-    background-color: #ff8f00;
-}
