@@ -53,25 +53,62 @@ if(isset($_POST['submit']))
 ?>
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+<header>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="index.php" class="brand-logo"><img src="img/trident_logo.png"></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <!-- 
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a href="collapsible.html">JavaScript</a></li>
+                -->
+            </ul>
+        </div>
+    </nav>
+</header>
+
 <body>
     <main>
-        <!-- Login Form  -->
-        <div id="login-wrapper" <?php if ($showLogin===false){?>style="display:none" <?php } ?>>
-            <form action="index.php" method="post">
-                <h1>Welcome to Jing's XML chat application</h1>
-                <h2>Name:</h2>
-                <input type="text" name="name">
-                <h2>Password:</h2>
-                <input type="password" name="password">
-                <div id="submitContainer">
-                    <input type="submit" name="submit" value="Submit">
-                </div>
-                <input type="button" class="button" onclick="window.location = '<?php echo $loginURL ?>';" id="googleSignInBtn" value="Sign In with Google">
-            </form>
-            <div id="errMsg"><?php echo $error ?></div>
+        <div class="row">
+            <div id="intro">
+                <div class="col s12"><span class="flow-text" id="intro-banner">Jing's Chatroom</span></div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Login Form  -->
+            <div class="col s5 push-s7" id="login-wrapper" <?php if ($showLogin===false){?>style="display:none"
+                <?php } ?>>
+                <form action="index.php" method="post">
+                    <div id="login-title"><span class="flow-text">Welcome!</span></div>
+                    <label for="name">Name</label>
+                    <input type="text" name="name">
+                    <label for="password">Password</label>
+                    <input type="password" name="password">
+                    <div id="error-message"><?php echo $error ?></div>
+                    <div id="submitContainer">
+                        <!-- <input type="submit" name="submit" value="Login"> -->
+                        <button class="btn waves-effect waves-light" type="submit" name="submit">Login
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                        <input type="button" class="btn red lighten-1" onclick="window.location = '<?php echo $loginURL ?>';"
+                        id="googleSignInBtn" value="Google Sign-in"> 
+                </form>
+            </div>
+            <div class="col s7 pull-s5">
+                <img src="img/PikachuRaichu.jpg" alt="Raichu and Pikachu" id="login-graphic">
+
+            </div>
         </div>
     </main>
 </body>
