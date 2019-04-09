@@ -8,6 +8,9 @@ $(document).ready(function(){
                 data: $('form').serialize(),
                 success: function () {
                     $('#message').val('');
+                    $("#chats").animate({
+                        scrollTop: $('#chats')[0].scrollHeight - $('#chats')[0].clientHeight
+                      }, 100);                
                 }
             });
         });
