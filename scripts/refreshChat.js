@@ -4,8 +4,8 @@ $(document).ready(function(){
     setInterval(function(){
         //In our div with id="chats" load our php file that renders chat log
         $('#chats').load('chatroomText.php');
-        $("#chats").animate({
-            scrollTop: $('#chats')[0].scrollHeight - $('#chats')[0].clientHeight
-          }, 0);    
+        // $("#chats").animate({
+        //     scrollTop: $('#chats')[0].scrollHeight - $('#chats')[0].clientHeight
+        //   }, 0);    
      }, 100)
     });

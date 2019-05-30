@@ -17,7 +17,7 @@
             <status>Busy</status>
             <message>
                 <submissionTime>07:30:00</submissionTime>
-                <text>Busy doing the XML assignment</text>
+                <text>What's up</text>
             </message>
         </user>
         <user id="3">
@@ -28,6 +28,5 @@
                 <text>Same</text>
             </message>
         </user>
-     <user id="1"><name>Jing</name><message><submissionTime>Apr,07,2019 01:33:23 AM</submissionTime><text>Okay</text></message></user><user id="1"><name>Jing</name><message><submissionTime>Apr,09,2019 02:58:49 PM</submissionTime><text>Hi Ryan&#13;
-</text></message></user><user id="1"><name>Architekx</name><message><submissionTime>Apr,09,2019 03:06:34 PM</submissionTime><text>testing scroll</text></message></user><user id="1"><name>Architekx</name><message><submissionTime>Apr,09,2019 03:07:04 PM</submissionTime><text>testing</text></message></user><user id="1"><name>Architekx</name><message><submissionTime>Apr,09,2019 03:08:09 PM</submissionTime><text>Hello</text></message></user><user id="1"><name>Architekx</name><message><submissionTime>Apr,09,2019 03:08:27 PM</submissionTime><text>hewwo</text></message></user><user id="1"><name>Architekx</name><message><submissionTime>Apr,09,2019 03:10:12 PM</submissionTime><text>!</text></message></user><user id="1"><name>Architekx</name><message><submissionTime>Apr,09,2019 03:11:18 PM</submissionTime><text>ryan</text></message></user><user id="1"><name>Architekx</name><message><submissionTime>Apr,09,2019 03:11:41 PM</submissionTime><text>test</text></message></user><user id="1"><name>Architekx</name><message><submissionTime>Apr,09,2019 03:11:58 PM</submissionTime><text>hi</text></message></user><user id="1"><name>Architekx</name><message><submissionTime>Apr,09,2019 03:12:13 PM</submissionTime><text>hiellsa</text></message></user><user id="1"><name>Architekx</name><message><submissionTime>Apr,09,2019 03:12:46 PM</submissionTime><text>reload 1/10th</text></message></user><user id="1"><name>Architekx</name><message><submissionTime>Apr,09,2019 03:13:08 PM</submissionTime><text>testing again</text></message></user></chat>
+    </chat>
 </chatroom>
