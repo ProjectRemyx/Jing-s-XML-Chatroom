@@ -1,23 +1,7 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <link rel="stylesheet" type="text/css" href="css/chatroom.css">
-    <link rel="stylesheet" type="text/css" href="css/global.css">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-    <script src="scripts/refreshChat.js"></script>
-    <script src="scripts/submitMessage.js"></script>
-</head>
 <?php
-include 'header.php';
 include 'sendMessage.php';
+include 'header.php';
 ?>
-
 <body>
     <div id="chatroomContainer">
         <div id="chatroom">
@@ -63,5 +47,3 @@ include 'sendMessage.php';
 <?php
 include 'footer.php';
 ?>
-
-</html>

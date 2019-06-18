@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $(function () {
-        $('form').on('submit', function (e) {
+        $('#submitMessageForm').on('submit', function (e) {
             e.preventDefault();
             $.ajax({
                 type: 'post',

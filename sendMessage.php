@@ -1,6 +1,6 @@
 <?php
 //Start the session
-// session_start();
+session_start();
 
 //Load our file
 $chatroom = simplexml_load_file($_SESSION['file']);

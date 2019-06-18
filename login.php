@@ -1,6 +1,6 @@
 <?php 
 require_once 'googleLoginConfig.php';
-// session_start();
+session_start();
 //Error message stored in variable
 $error = "";
 $showLogin = true;
