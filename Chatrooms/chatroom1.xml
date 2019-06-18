@@ -17,7 +17,7 @@
             <status>Busy</status>
             <message>
                 <submissionTime>07:30:00</submissionTime>
-                <text>Busy doing the XML assignment</text>
+                <text>What's up</text>
             </message>
         </user>
         <user id="3">
@@ -28,5 +28,5 @@
                 <text>Same</text>
             </message>
         </user>
-     <user id="1"><name>Jing</name><message><submissionTime>Apr,07,2019 01:33:23 AM</submissionTime><text>Okay</text></message></user></chat>
+    </chat>
 </chatroom>
